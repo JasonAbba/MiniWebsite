@@ -1,2 +1,2 @@
 # MiniWebsite
-This the website I made which is based on the Motercycle brand Royal Enfield for a college assignment.
+This is the website I made which is based on the Motorcycle brand Royal Enfield for a college assignment.
