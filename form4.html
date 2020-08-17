@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('RE.jpg');
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            #head{
+                font-size: xx-large;
+                font-family: Helvetica;
+                font-style: oblique;
+            }
+            .opacity{
+                background: rgba(255, 255, 255, 0.450);
+                font-size: large;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 200;
+            }
+            #btn{
+                font-size: larger;
+                color: cadetblue;
+                background-color:beige;
+                border: 10px;
+                
+            }
+            #bottom {
+			font-family: "Helvetica";
+			position: absolute;
+        	bottom: 0;
+        	right: 0;
+        	background-color: blue;
+        	color: #ffdf00;
+		}
+        </style>
+        <script>
+            function display()
+            {
+            
+                for(var i = 0; i < document.getElementsByName('bike').length; i++)
+                {
+                    if (document.getElementsByName('bike')[i].checked)
+                    {
+                        var RE_bike = document.getElementsByName('bike')[i].value;
+                    }
+                }
+
+                for(var i = 0; i < document.getElementsByName('eng').length; i++)
+                {
+                    if (document.getElementsByName('eng')[i].checked)
+                    {
+                        var RE_engine = document.getElementsByName('eng')[i].value;
+                    }
+                }
+
+                for(var i = 0; i < document.getElementsByName('clr').length; i++)
+                {
+                    if (document.getElementsByName('clr')[i].checked)
+                    {
+                        var RE_color = document.getElementsByName('clr')[i].value;
+                    }
+                }
+                alert('The bike you chose:- ' + RE_bike + '\nThe Engine type you chose:- ' + RE_engine + '\nThe Color you chose:- ' + RE_color)
+            }
+        </script>
+    </head>
+    <body>
+        <div id = "head">
+            <h1>
+                What type of Royal Enfield bike would you like?
+            </h1>
+        </div>
+        <br><br><br>
+        <div class = "opacity">
+            <p1>
+                <i><b>Choose your bike:</b></i>
+            </p1>
+            <br>
+            <input type = "radio" name = "bike" value = "Royal Enfield Classic 350">Royal Enfield Classic 350
+            <br>
+            <input type = "radio" name = "bike" value = "Royal Enfield Bullet 350">Royal Enfield Bullet 350
+            <br>
+            <input type = "radio" name = "bike" value = "Royal Enfield Himalayan">Royal Enfield Himalayan
+            <br>
+            <input type = "radio" name = "bike" value = "Royal Enfield Interceptor 650">Royal Enfield Interceptor 650
+            <br>
+            <input type = "radio" name = "bike" value = "Royal Enfield Continental GT 650">Royal Enfield Continental GT 650
+        </div>
+        <br><br>
+        <div class = "opacity">
+            <p2>
+                <i><b>Choose your engine:</b></i>
+            </p2>
+            <br>
+            <input type = "radio" name = "eng" value = "BS4">BS4
+            <br>
+            <input type = "radio" name = "eng" value = "BS6">BS6
+        </div>
+        <br><br>
+        <div class = "opacity">
+            <p2>
+                <i><b>Choose your color:</b></i>
+            </p2>
+            <br>
+            <input type = "radio" name = "clr" value = "Black">Black
+            <br>
+            <input type = "radio" name = "clr" value = "Ash">Ash
+            <br>
+            <input type = "radio" name = "clr" value = "Lagoon">Lagoon
+            <br>
+            <input type = "radio" name = "clr" value = "Chestnut">Chestnut
+            <br>
+            <input type = "radio" name = "clr" value = "Silver">Silver
+        </div>
+        <br>
+        <div>
+            <button type = "button" id = "btn" onclick = "display()"><b>Submit</b></button>
+        </div>
+        <b><a id = "bottom" href="main.html">CLICK TO GO BACK</a></b>
+    </body>
+</html>

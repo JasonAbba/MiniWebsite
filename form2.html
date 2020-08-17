@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('Himalayan.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            h2{
+                font-weight: bold;
+                font-family: Helvetica;
+                font-style: oblique;
+            }
+            #news{
+                font-family: 'Courier New', Courier, monospace;
+                font-style: bold;
+                font-size: x-large;
+                text-align: center;
+                border: 10px;
+            }
+            #block{
+                background: rgba(255, 255, 255, 0.4)
+            }
+            #btn{
+                font-size: larger;
+                color: cadetblue;
+                background-color:beige;
+                border: 10px;
+                
+            }
+            #bottom {
+			font-family: "Helvetica";
+			position: absolute;
+        	bottom: 0;
+        	right: 0;
+        	background-color: blue;
+        	color: #ffdf00;
+		}
+        </style>
+    </head>
+    <body>
+       <form>
+           <div id = news>
+                <h2>SUBSCRIBE TO THE ROYAL ENFIELD NEWSLETTER</h2>
+                <fieldset id = "block">    
+                    <legend>INFORMATION</legend>
+                    <div>
+                        <label for = "name">Enter full name:</label>
+                        <input type = "text" = "name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for = "email">Enter your email:</label>
+                        <input type = "email" name = "email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for = "num">Enter your mobile number:</label>
+                        <input type = "text" = "num">
+                    </div>
+                    <br><br>
+                    <div>
+                        <button type = "button" id = "btn" onclick = "alert('Thank you for subsribing us for daily updates!!')"><b>Subscribe</b></button>
+                    </div>
+                </fieldset>
+                <b><a id = "bottom" href="main.html">CLICK TO GO BACK</a></b>
+           </div>
+       </form> 
+    </body>
+</html>
